@@ -1,4 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ,Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
 
 * {
   margin: 0;
@@ -212,6 +234,46 @@ button:disabled {
   font-weight: 500;
   color: #6b757b;
   margin-bottom: 16px;
+  animation: cycle 24s infinite;
+  animation-fill-mode: forwards;
+}
+
+.headlines-0 {
+  animation-delay: 0s;
+}
+.headlines-1 {
+  animation-delay: 4s;
+}
+.headlines-2 {
+  animation-delay: 8s;
+}
+.headlines-3 {
+  animation-delay: 12s;
+}
+.headlines-4 {
+  animation-delay: 16s;
+}
+.headlines-5 {
+  animation-delay: 20s;
+}
+
+@keyframes cycle {
+  0% {
+    color: #6b757b;
+  }
+  3% {
+    color: #20ba68;
+  }
+  15% {
+    color: #20ba68;
+  }
+  18% {
+    color: #6b757b;
+  }
+  100% {
+    color: #6b757b;
+  }
+
 }
 
 .statistics__heading:last-child {
