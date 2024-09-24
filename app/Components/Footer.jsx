@@ -4,8 +4,8 @@ export default function Footer() {
   return (
     <>
       <section id="footer">
-        <div className="container">
           <div className="row">
+        <div className="container">
             <div className="footer__top--wrapper">
               <div className="footer__block">
                 <div className="footer__link--title">Actions</div>

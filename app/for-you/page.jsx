@@ -1,18 +1,18 @@
 import React from "react";
 import UserNav from "../Components/Foryou/UserNav";
-import Search from "../Components/Search";
 import UserLanding from "../Components/Foryou/UserLanding";
+import Search from "../Components/Search";
 
 export default function foryou() {
+
+
   return (
     <>
-      <div className="flex flex-row min-h-screen">
-        <UserNav className="w-[30%]"/>
-        <div className="flex flex-col w-[100%]">
-          <Search />
-          <UserLanding />
+      <div className="relative flex flex-col ml-[200px] w-[calc(100% - 200px)">
+         <Search />
+          <UserNav className="" />
+          <UserLanding className="" />
         </div>
-      </div>
     </>
   );
 }

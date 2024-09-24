@@ -10,8 +10,8 @@ export default function Features() {
     <>
     
       <section id="features">
-        <div className="container">
           <div className="row">
+        <div className="container">
             <div className="section__title">Understand books in few minutes</div>
             <div className="features__wrapper">
               <div className="features">

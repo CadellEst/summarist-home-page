@@ -25,7 +25,7 @@ export default function SignupModal() {
 
   useEffect(() => {
     const currUser = onAuthStateChanged(auth, (currentUser) => {
-      if (!currentUser) return
+      if (!currentUser) return null
       dispatch(setUser({
         email: currentUser.email,
         password: currentUser.password,

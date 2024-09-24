@@ -3,7 +3,6 @@
 import { Modal } from "@mui/material";
 import { useState } from "react";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { auth } from "@/app/Components/Auth";
 import { signInWithGoogle } from "@/app/Components/Auth";
 
 

@@ -7,8 +7,8 @@ export default function Numbers() {
   return (
     <>
       <section id="numbers">
-        <div className="container">
           <div className="row">
+        <div className="container">
             <div className="section__title">Start growing with Summarist now</div>
             <div className="numbers__wrapper">
               <div className="numbers">
