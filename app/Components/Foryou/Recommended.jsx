@@ -27,7 +27,7 @@ export default function Recommended() {
         <p className="font-normal text-[#394547] mb-8">
           We think you'll like these
         </p>
-        <div className="flex overflow-x-auto snap-x gap[16px] mb-8">
+        <div className="flex overflow-x-auto decoration-transparent snap-x gap[16px] mb-8">
           {recomBooks?.map((recomBooks) => (
               <a
                 href=""

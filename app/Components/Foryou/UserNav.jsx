@@ -12,65 +12,86 @@ import { useDispatch } from "react-redux";
 
 export default function UserNav(auth) {
   return (
-    <div className="bg-slate-100 w-[200px] min-w-[200px] fixed top-0 left-0 h-lvh z-50 ">
-      <div className="relative flex flex-col px-4 h-screen ">
-        <div className="w-fit ">
-          <Image className="max-w-40 pt-5 pb-8 fixed" src={Logo} />
-        </div>
-        <div className="flex flex-col fixed py-8 translate-y-16">
-          <div className="flex flex-row items-center py-3">
+    <div className="bg-slate-100 w-[200px] min-w-[200px] fixed top-0 left-0 h-lvh z-10 m-auto">
+      <div className="flex items-center justify-center h-[60px] pt-4 max-w-40 m-auto">
+        <Image className="w-full h-10" src={Logo} />
+      </div>
+      <div className="flex flex-col justify-between h-[calc(100vh-60px)] pb-5 overflow-y-auto">
+        <div className="flex mt-10 flex-col">
+          <a
+            href="/for-you"
+            className="flex items-center h-14 text-[#032b41] mb-2 cursor-pointer"
+          >
+            <div className="h-full w-[5px] bg-[#2bd97c] mr-4 z-50"></div>
             <IoHomeOutline className="text-2xl" />
-            <a href="/for-you" className="p-2 text-md">
-              For You
-            </a>
-          </div>
-          <div className="flex flex-row items-center py-3">
+            For You
+          </a>
+          <a
+            href="/for-you"
+            className="flex items-center h-14 text-[#032b41] mb-2 cursor-pointer"
+          >
+            <div className="w-[5px] h-full bg-transparent mr-4"></div>
             <CiBookmark className="text-2xl" />
-            <a href="/for-you" className="p-2 text-md">
-              My Library
-            </a>
-          </div>
-          <div className="flex flex-row items-center py-3">
+            My Library
+          </a>
+          <a
+            href="/for-you"
+            className="flex items-center h-14 text-[#032b41] mb-2 cursor-pointer"
+          >
+            <div className="w-[5px] h-full bg-transparent mr-4"></div>
             <BsPen className="text-2xl" />
-            <a href="/for-you" className="p-2 text-md">
-              Highlights
-            </a>
-          </div>
-          <div className="flex flex-row items-center py-3">
+            Highlights
+          </a>
+          <a
+            href="/for-you"
+            className="flex items-center h-14 text-[#032b41] mb-2 cursor-pointer"
+          >
+            <div className="w-[5px] h-full bg-transparent mr-4"></div>
             <TfiSearch className="text-2xl" />
-            <a href="/for-you" className="p-2 text-md">
-              Search
-            </a>
-          </div>
+            Search
+          </a>
         </div>
 
-        <div className="flex flex-col py-8 fixed bottom-0">
-          <div className="flex flex-row items-center py-3">
+        <div className="flex flex-col">
+          <a
+            href=""
+            className="flex items-center h-14 text-[#032b41] mb-2 cursor-pointer"
+          >
+            <div className="w-[5px] h-full bg-transparent mr-4"></div>
             <IoSettingsOutline className="text-2xl" />
-            <a href="" className="p-2 text-md">
-              Settings
-            </a>
-          </div>
-          <div className="flex flex-row items-center py-3">
+            Settings
+          </a>
+          <a
+            href=""
+            className="flex items-center h-14 text-[#032b41] mb-2 cursor-pointer"
+          >
+            <div className="w-[5px] h-full bg-transparent mr-4"></div>
             <IoIosHelpCircleOutline className="text-2xl" />
-            <a href="" className="p-2 text-md">
-              Help & Support
-            </a>
-          </div>
+            Help & Support
+          </a>
           {!auth ? (
-            <div className="flex flex-row items-center py-3">
-              <IoIosLogIn className="text-2xl" />
-              <a href="" className="p-2 text-md">
+            <>
+              <a
+                href=""
+                className="flex items-center h-14 text-[#032b41] mb-2 cursor-pointer"
+              >
+                <div className="w-[5px] h-full bg-transparent mr-4"></div>
+                <IoIosLogIn className="text-2xl" />
                 Login
               </a>
-            </div>
+            </>
           ) : (
-            <div className="flex flex-row items-center py-3">
-              <IoIosLogOut className="text-2xl" />
-              <a href="" className="p-2 text-md" onClick={null}>
+            <>
+              <a
+                href=""
+                className="flex items-center h-14 text-[#032b41] mb-2 cursor-pointer"
+                onClick={null}
+              >
+                <div className="w-[5px] h-full bg-transparent mr-4"></div>
+                <IoIosLogOut className="text-2xl" />
                 Logout
               </a>
-            </div>
+            </>
           )}
         </div>
       </div>
