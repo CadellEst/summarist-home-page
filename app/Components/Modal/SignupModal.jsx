@@ -4,10 +4,10 @@ import { Modal } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { createUserWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
-import { closeSignupModal, openSignupModal } from "@/redux/modalSlice";
-import { auth } from "@/firebase";
-import { setUser } from "@/redux/userSlice";
-import foryou from "@/app/for-you/page";
+import { closeSignupModal, openSignupModal } from "../../../redux/modalSlice";
+import { auth } from "firebase-admin";
+import { setUser } from "../../../redux/userSlice";
+import foryou from "../../../app/for-you/page";
 export default function SignupModal() {
   const isOpen = useSelector((state) => state.modals.SignupModalOpen);
   const dispatch = useDispatch();

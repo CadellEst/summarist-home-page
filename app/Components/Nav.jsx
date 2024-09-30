@@ -1,8 +1,8 @@
 import React from "react";
-import { openSignupModal } from "@/redux/modalSlice";
 import { useDispatch } from "react-redux";
 import logo from "../Assets/logo.webp";
 import Image from "next/image";
+import { openSignupModal } from "../../redux/modalSlice";
 
 export default function Nav(auth) {
   const dispatch = useDispatch();

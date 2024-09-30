@@ -7,7 +7,7 @@ import Reviews from "./Components/Home/Reviews";
 import Numbers from "./Components/Home/Numbers";
 import Footer from "./Components/Footer";
 import { Provider } from "react-redux";
-import { store } from "@/redux/store";
+import { store } from "../redux/store";
 import SignupModal from "./Components/Modal/SignupModal";
 
 
